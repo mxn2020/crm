@@ -33,3 +33,18 @@ def delete_lead(lead_id):
     db.session.delete(lead)
     db.session.commit()
     return jsonify({'message': 'Lead deleted successfully'})
+
+@leads.route('/leads/filter', methods=['GET'])
+def filter_leads():
+    status = request.args.get('status')
+    if status:
+        filtered_leads = Lead.query.filter_by(status=status).all()
+    else:
+        filtered_leads = Lead.query.all()
+    return jsonify([{'id': lead.id, 'name': lead.name, 'email': lead.email, 'status': lead.status} for lead in filtered_leads])
+
+@leads.route('/leads/search', methods=['GET'])
+def search_leads():
+    query = request.args.get('query')
+    search_results = Lead.query.filter(Lead.name.like(f'%{query}%') | Lead.email.like(f'%{query}%')).all()
+    return jsonify([{'id': lead.id, 'name': lead.name, 'email': lead.email, 'status': lead.status} for lead in search_results])

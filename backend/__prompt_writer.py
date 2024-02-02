@@ -3,7 +3,7 @@ import json
 
 # Define the names of files and folders to be ignored
 ignored_files = [".env", ".gitignore", "database.db", "package-lock.json", "index.html", "__prompt_writer.py"]
-ignored_folders = ["__prompt", "__files", "venv", "node_modules", "__json_files", "__pycache__", ".git", "__temp_project", "__projects", "ai", "public", "assets", "uploads"]
+ignored_folders = ["__prompt", "migrations", "__files", "venv", "node_modules", "__json_files", "__pycache__", ".git", "__temp_project", "__projects", "ai", "public", "assets", "uploads"]
 ignored_file_types = [".css", ".svg", ".png", ".jpg", ".jpeg", ".gif", ".ico", ".woff", ".woff2", ".ttf", ".eot", ".map"]
 CROP_NUM_CHARS = 60
 

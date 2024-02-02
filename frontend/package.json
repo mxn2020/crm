@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@mui/x-data-grid": "^6.19.3",
+    "moment": "^2.30.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-big-calendar": "^1.8.7",
+    "react-dom": "^18.2.0",
+    "react-quill": "^2.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
