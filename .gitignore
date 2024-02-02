@@ -1,3 +1,6 @@
+__files
+__prompt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -158,3 +161,130 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Node.js
+node_modules/
+
+# Build files
+/dist/
+
+# Editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# lerna-debug.log* - Uncomment if you use Lerna
+
+# Dependency directories
+pnpify/
+.eslintcache
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Cache files
+*.log
+.pnp
+pnp.js
+
+# Output directories
+/dist/
+/build/
+/out/
+/.next/
+/.nuxt/
+/.vite/
+
+# Serverless directories
+/.serverless/
+
+# Testing
+/coverage/
+/.nyc_output/
+/.jest/
+
+# Next.js
+/.next/
+/next-debug.log
+
+# Gatsby
+.cache/
+/public/sw.js
+/public/sw.ts
+/static/d
+.babel-plugin-macros
+
+# Vite
+node_modules/
+/out/
+/dist/
+/node_modules/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!.pnp.*
+.pnp.local
+
+# Pnpm
+node_modules/
+/pnpm-lock.yaml
+/pnpmfile.js
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Local environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Visual Studio Code directory
+.vscode
+
+# Jest cache
+.jest
+
+# Firebase
+.firebase/
+.firebase.cache/
+# If you deploy functions using Firebase
+# Don't forget it if you're using Firebase or Firestore
+# functions/.runtimeconfig.json
+
+# End of file
